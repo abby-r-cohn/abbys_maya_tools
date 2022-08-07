@@ -24,6 +24,8 @@
 <h1 align="middle">Maya Tools</h1>
 <h2 align="middle">Abby Cohn</h2>
 
+<h3 align="middle">*Images used contain property of Nickelodeon Animation, do not duplicate*</h3>
+
 <br><br>
 
 <div>
@@ -37,13 +39,118 @@
 
 <p>This shader exporter, which works with the Redshift renderer, allows the user to export any shader from a file of their choosing. The exporter supports multiple exports at once to the same folder. The default export location is the "Data" folder of each asset, but can be altered via the UI. If there is a shader update that the user may need to export to the same folder, the old shader is not  overridden, but archived in an "Old" folder, which gets created upon the initial shader archive for each asset. </p> 
 
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <img src="images/ShaderExporter_Img_01.JPG" align="middle" width="500px"/>
+      </td>
+      </tr>
+  </table>
+</div>
+
+<br><br>
+
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <figcaption align="middle">Exported Shader Files</figcaption>
+        <img src="images/ShaderExporter_Img_02.JPG" align="middle" width="300px"/>
+      </td>
+      <td>
+        <figcaption align="middle">Archived Shader Files With the Date & Time</figcaption>
+        <br><br>
+        <img src="images/ShaderExporter_Img_03.JPG" align="middle" width="350px"/>
+      </td>
+      </tr>
+  </table>
+</div>
+
+<br><br>
+
 <h3 align="middle">Redshift AOV Helper</h3>
 
 <p>Setting up custom AOVs for emission within a shader can be a tedious task, especially with many different shaders that require a custom AOV node. This tool allows the user to select as many shading engines of the networks they would like to add the AOV to at once. The code then inserts a RedshiftStoreColorToAOV node into each selected network with either the emission color or file node as the custom input. The AOV name is added to a "Custom AOV Trigger" attribute on the transform or the trigger is created with the new AOV name, if not already made. This allows the user to add + remove the passes from renders, and keep track of each AOV. </p>
 
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <figcaption align="middle">Shading Engines Selected</figcaption>
+        <img src="images/AOV_Helper_Img_01.JPG" align="middle" width="315px"/>
+      </td>
+      <td>
+        <figcaption align="middle">AOV Nodes Inserted with Custom AOV Created</figcaption>
+        <img src="images/AOV_Helper_Img_02.JPG" align="middle" width="500px"/>
+      </td>
+      </tr>
+  </table>
+</div>
+
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <figcaption align="middle">Custom AOV Attr Added to Transform</figcaption>
+        <img src="images/AOV_Helper_Img_03.JPG" align="middle" width="340px"/>
+      </td>
+      </tr>
+  </table>
+</div>
+
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <figcaption align="middle">Full Render</figcaption>
+        <img src="images/AOV_Helper_Img_04.JPG" align="middle" width="315px"/>
+      </td>
+      <td>
+        <figcaption align="middle">Card01 Shader AOV</figcaption>
+        <img src="images/AOV_Helper_Img_05.JPG" align="middle" width="315px"/>
+      </td>
+      <td>
+        <figcaption align="middle">Card02 Shader AOV</figcaption>
+        <img src="images/AOV_Helper_Img_06.JPG" align="middle" width="315px"/>
+      </td>
+      </tr>
+  </table>
+</div>
+
+<br><br>
+
 <h3 align="middle">Follow (Transform Space) Attribute Helper</h3>
 
 <p>When assets have multiple components that can move independently, it is nice to have the ability to alter the transform space within each asset's rig as needed. The user may define the control they would like to add the attribute to, the Master control, COG control (center of gravity), Transform control, and indicate whether they would like to include World space. The user may omit any enum they would not like to include. Once the attribute is created, the user can define the control group to constrain based on the list of "Follow" enums. The list of constraints are added & the final step sets up driven keys for each enum and weights the new constraints accordingly. </p>
+
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <figcaption align="middle">Shading Engines Selected</figcaption>
+        <img src="images/FollowAttr_Img_01.JPG" align="middle" width="400px"/>
+      </td>
+      <td>
+        <figcaption align="middle">AOV Nodes Inserted with Custom AOV Created</figcaption>
+        <img src="images/FollowAttr_Img_02.JPG" align="middle" width="400px"/>
+      </td>
+      </tr>
+  </table>
+</div>
+
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <figcaption align="middle">Custom AOV Attr Added to Transform</figcaption>
+        <img src="images/FollowAttr_Img_03.JPG" align="middle" width="340px"/>
+      </td>
+      </tr>
+  </table>
+</div>
+
+<br><br>
 
 <h3 align="middle">QC Tools</h3>
 
