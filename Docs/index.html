@@ -37,7 +37,7 @@
 <h2 align="middle">Tools</h2>
 <h3 align="middle">Redshift Shader Exporter</h3>
 
-<p>This shader exporter, which works with the Redshift renderer, allows the user to export any shader from a file of their choosing. The exporter supports multiple exports at once to the same folder. The default export location is the "Data" folder of each asset, but can be altered via the UI. If there is a shader update that the user may need to export to the same folder, the old shader is not  overridden, but archived in an "Old" folder, which gets created upon the initial shader archive for each asset. </p> 
+<p>This shader exporter, which works with the Redshift renderer, allows the user to export any shader from a file of their choosing. Each shading network in a Maya file is identified and displayed by name in the UI. The exporter supports multiple exports at once to the same folder. The default export location is the "Data" folder of each asset, but can be altered via the UI. If there is a shader update that the user may need to export to the same folder, the old shader is not  overridden, but archived in an "Old" folder, which gets created upon the initial shader archive for each asset. </p> 
 
 <div align="middle">
   <table style="width=100%">
@@ -152,7 +152,13 @@
 
 <br><br>
 
+<h3 align="middle">Image Sequence & Redshift Proxy Sequence Looper</h3>
+
+<p>Since there is no built-in method of looping sequences in Maya, this can be done via expressions. This script creates the expression needed to loop an image sequence or Redshift proxy sequence by finding the total number of frames. Taking the current frame mod the number of total frames will give the remainder of frames once the timeline gets past that total number & will seamlessly loop. </p>
+
+<br><br>
+
 <h3 align="middle">QC Tools</h3>
 
-<p>This is a series of QC tools that perform simple checks and ensure clean scenes when working with large files. They check for objects with no materials assigned, objects with multiple shape nodes, and Scene Assembly references that have locked transforms. There is an option to unlock all of the references that are found to be locked, as well. /p>
+<p>This is a series of QC tools that perform simple checks and ensure clean scenes when working with large files. They check for objects with no materials assigned, objects with multiple shape nodes, and Scene Assembly references that have locked transforms. There is an option to unlock all of the references that are found to be locked, as well. </p>
 
