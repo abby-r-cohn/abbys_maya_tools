@@ -20,11 +20,23 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
 </head>
 
+
+
 <body>
 <h1 align="middle">Maya Tools</h1>
 <h2 align="middle">Abby Cohn</h2>
 
-<h3 align="middle">*Images used contain property of Nickelodeon Animation, do not duplicate*</h3>
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <img src="images/AbbysToolbox_Img_01.png" align="middle" width="275px"/>
+      </td>
+      </tr>
+  </table>
+</div>
+
+<h4 align="middle">*Images used contain property of Nickelodeon Animation, do not duplicate*</h4>
 
 <br><br>
 
@@ -154,7 +166,33 @@
 
 <h3 align="middle">Image Sequence & Redshift Proxy Sequence Looper</h3>
 
-<p>Since there is no built-in method of looping sequences in Maya, this can be done via expressions. This script creates the expression needed to loop an image sequence or Redshift proxy sequence by finding the total number of frames. Taking the current frame mod the number of total frames will give the remainder of frames once the timeline gets past that total number & will seamlessly loop. </p>
+<p>Since there is no built-in method of looping sequences in Maya, this can be done via expressions. This script creates the expression needed to loop an image sequence or Redshift proxy sequence by finding the total number of frames. Taking the current frame mod the number of total frames will give the remainder of frames once the timeline gets past that total number & will seamlessly loop. The code accounts for the sequence starting at zero or 1, as well. The below example is a 119 frame sequence starting at zero and ending at 118. </p>
+
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <figcaption align="middle">Last Frame of Sequence</figcaption>
+        <img src="images/Loop_Img_02.png" align="middle" width="400px"/>
+      </td>
+      <td>
+        <figcaption align="middle">Sequence Begins to Loop</figcaption>
+        <img src="images/Loop_Img_03.png" align="middle" width="400px"/>
+      </td>
+      </tr>
+  </table>
+</div>
+
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <figcaption align="middle">Expression Created using Seq Length and Starting Frame</figcaption>
+        <img src="images/Loop_Img_01.png" align="middle" width="425px"/>
+      </td>
+      </tr>
+  </table>
+</div>
 
 <br><br>
 
